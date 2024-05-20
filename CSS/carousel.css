@@ -1,24 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
 .carousel {
-    width: 800px; 
-    height: 600px;
-    margin: 0 auto; 
-    overflow: hidden; 
+    width: 100%; 
     position: relative;
+    margin: 0 auto;
 }
 
-.imagens {
-    display: flex; 
-    transition: transform 0.5s ease; 
+.texto-carousel {
+    width:100%;
 }
 
-.imagens li {
-    flex: 1; 
-    text-align: center;
+.slides {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5 ease;
 }
 
-.imagens img {
+.slides li {
+    flex: 1;
     width: 100%;
-    height: auto; 
+    height: 400px;
+    background-size: cover;
+    background-position: left;
+}
+
+.indicadores {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicador {
+    margin: 0 5px;
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.indicador.ativo {
+    background-color: #9699CD;
 }
 
 .anterior, .proximo {
@@ -27,14 +55,20 @@
     transform: translateY(-50%); 
     padding: 10px;
     background-color: #ccc;
+    color: #007bff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3 ease
 }
 
+.anterior:hover,
+.proximo:hover {
+    background-color: #eee;
+}
 .anterior {
-    left: 0;
+    left: 20px;
 }
 
 .proximo {
-    right: 0;
+    right: 550px;
 }

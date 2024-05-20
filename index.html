@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrainBox - Sala de Estudos</title>
     <link rel="stylesheet" href="CSS/body.css">
-    <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/carousel.css">
+    <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/footer.css">
     
 
@@ -14,29 +14,50 @@
 </head>
 <body>
 
+    
     <nav>
-        <ul>
-            <li><a href="#"><img src="https://live.staticflickr.com/65535/53712614516_ef01893677_o.png" alt ="BrainBox Logo"></a></li>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Unidades</a></li>
-            <li><a href="#">Contatos</a></li>
-            <li><a href="#"><img src="https://live.staticflickr.com/65535/53712840428_f5a51151eb_o.png" alt ="Icone Login">Login</a></li>
-        </ul>
+        
+        
+        
+        <div class="navmenu">
+            <ul>
+                <li><a href="#"><a href="#"><img src="Imagens/Logomarca/BrainBox.png" alt ="BrainBox Logo"></a></a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Unidades</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#"><img src="Imagens/Usuario/Login.png" alt ="Icone Login">Login</a></li>
+                <li><a href="#"><img src="Imagens/Usuario/Cadastro.png" alt ="Icone Cadastro">Cadastro</a></li>
+            </ul>
+      
+
     </nav>
 
-    <div class="carousel">
-        <ul class="imagens">
-            <li><img src="https://live.staticflickr.com/65535/53713960926_9c09ca1645_o.png" alt="Imagem 1"></li>
-            <li><img src="https://live.staticflickr.com/65535/53714295104_4b764b2da8_o.png" alt="Imagem 2"></li>
-            <li><img src="https://live.staticflickr.com/65535/53713960891_8237d3459f_b.jpg" alt="Imagem 3"></li>
-            <li><img src="https://live.staticflickr.com/65535/53713960896_243b55a723_b.jpg" alt="Imagem 5"></li>
-            <li><img src="https://live.staticflickr.com/65535/53713046187_cbdb18a46f_o.png" alt="Imagem 4"></li>
+    <div class="container">
+        <div class="carousel">
+            <ul class="slides">
+                <li><img src="Imagens/Carousel/IC0.jpg" alt="Imagem 1"></li>
+                <li><img src="Imagens/Carousel/IC1.jpg" alt="Imagem 2"></li>
+                <li><img src="Imagens/Carousel/IC2.jpg" alt="Imagem 3"></li>
             </ul>
-        <button class="anterior">Anterior</button>
-        <button class="proximo">Próximo</button>
+
+            <div class="indicadores">
+                <button class="indicador ativo" data-slide="0"></button>
+                <button class="indicador" data-slide="1"></button>
+                <button class="indicador" data-slide="2"></button>
+                
+            </div>
+
+            <button class="anterior">Anterior</button>
+            <button class="proximo">Próximo</button>
+
+            <div class="texto-carousel">
+                <h2>Título do Carrossel</h2>
+                <p>Descrição do carrossel e seus benefícios.</p>
+            </div>
     </div>
+</div>  
 
  
     <footer>
@@ -54,11 +75,11 @@
         </p>
 
         <p social>
-            <a href="www.facebook.com"><img src="https://live.staticflickr.com/65535/53713859106_926e1fdb97_o.png" alt="Facebook"></a>
-            <a href="www.instagram.com"><img src="https://live.staticflickr.com/65535/53714070358_2bd9c1816b_o.png" alt="Instagram"></a>
-            <a href="www.twitter.com"><img src="https://live.staticflickr.com/65535/53714070363_2af89d8933_o.png" alt="Twitter"></a>
-            <a href="www.linkedin.com"><img src="https://live.staticflickr.com/65535/53713859091_b96e035fcb_o.png" alt="LinkedIn"></a>
-            <a href="www.youtube.com"><img src="https://live.staticflickr.com/65535/53712944657_b61791ce36_o.png" alt="YouTube"></a>
+            <a href="www.facebook.com"><img src="Imagens/Icons/Redes Sociais/facebook.png" alt="Facebook"></a>
+            <a href="www.instagram.com"><img src="Imagens/Icons/Redes Sociais/instagram.png" alt="Instagram"></a>
+            <a href="www.twitter.com"><img src="Imagens/Icons/Redes Sociais/twitter.png" alt="Twitter"></a>
+            <a href="www.linkedin.com"><img src="Imagens/Icons/Redes Sociais/linkdin.png" alt="LinkedIn"></a>
+            <a href="www.youtube.com"><img src="Imagens/Icons/Redes Sociais/youtube.png" alt="YouTube"></a>
         </p>
 
         <p copyright>
@@ -66,8 +87,6 @@
         </p>
     </footer>
 
-<script src="JS/script.js"></script>
-
-
+    <script src="JS/script.js"></script>
 </body>
 </html>
